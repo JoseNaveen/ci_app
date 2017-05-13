@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "jenkins-mocha": "^4.1.2",
     "mocha": "^3.3.0",
     "should": "^11.2.1",
     "supertest": "^3.0.0"
