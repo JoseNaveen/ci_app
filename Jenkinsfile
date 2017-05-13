@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'mocha'
+                sh './node_modules/mocha/bin/mocha'
             }
         }
         stage('Deploy') {
