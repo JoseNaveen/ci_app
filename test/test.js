@@ -10,6 +10,7 @@ expect = chai.expect;
 
 describe('GET /', function() {
     it('should return a 200', function(done) {
+    	this.timeout(5000)
         request(app).get('/').expect(200, done);
     });
 });
