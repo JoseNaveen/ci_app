@@ -5,6 +5,6 @@ var expect = require("chai").expect;
 
 describe("SAMPLE unit test",function(){
 	it("Dummy test",function(){
-		expect(1+3).to.equal(2)
+		expect(1+1).to.equal(2);
 	});
 });
