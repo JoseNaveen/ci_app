@@ -1,10 +1,15 @@
-/**
- * http://usejsdoc.org/
- */
-var expect = require("chai").expect;
+var request = require('supertest');
+var app = require('../test_app');
 
-describe("SAMPLE unit test",function(){
-	it("Dummy test",function(){
-		expect(1+1).to.equal(2);
-	});
+var assert = require('assert'); //mocha
+var chai = require('chai');
+var expect = null;
+
+chai.should();
+expect = chai.expect;
+
+describe('GET /', function() {
+    it('should return a 200', function(done) {
+        request(app).get('/').expect(200, done);
+    });
 });
