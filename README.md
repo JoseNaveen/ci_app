@@ -5,7 +5,7 @@
 
 
 ## Usage
-
+Use npm i --save-dev <package name> to install any dependencies
 
 
 ## Developing
