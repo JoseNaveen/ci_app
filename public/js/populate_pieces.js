@@ -157,6 +157,11 @@ function displayImage(PieceName,Loc){
             
     }
 }
+function clear_board(){
+  for(i=0;i<144;i++){
+     
+  }
+}
 function load_board_with_json(loaded_board_objects){
 for (t1=0; t1 < loaded_board_objects.length; t1++){
     t3 = loaded_board_objects[t1].cell.pos;
@@ -176,6 +181,7 @@ for (t1=0; t1 < 144; t1++){
 };
 };
 var data = 0;
+
 $.ajax({
   dataType: "json",
   //url: "/piece?game_id=" + game_id,
@@ -216,7 +222,8 @@ $('.selectable').droppable({
   Make_Draggables();
 }
 });	
-
+return_obj.load_init=load_board_with_json;
+return_obj.Make_Draggables=Make_Draggables;
 
 return_obj.displayImage = displayImage;
 

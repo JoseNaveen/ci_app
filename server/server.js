@@ -27,6 +27,7 @@ if ('development' == app.get('env')) {
 
 app.get('/', routes.index);
 app.get('/game',routes.game);
+app.get('/test',routes.test);
 app.get('/game_stream',routes.game_stream);
 app.get('/users', user.list);
 
