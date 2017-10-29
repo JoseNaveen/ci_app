@@ -669,7 +669,12 @@ function move(src, tgt) {
 				}
 				}
 			};
-			
+			if(my_color==="white"){
+			    my_color="black";
+			}
+			else{
+			    my_color="white";
+		    }
 			$.ajax({
 				type: 'POST',
 				url: '/game?game_id=' + game_id,

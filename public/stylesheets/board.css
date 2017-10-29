@@ -1,7 +1,7 @@
 .chessboard {
     float:left;
-    width: 360px;
-    height: 360px;
+    width: 376px;
+    height: 376px;
     margin: 10px;
     border: 5px solid #333;
     position:relative;
@@ -9,15 +9,15 @@
 .dashboard{
   top: 10px;
   float:left;
-  height:328px;
+  height:376px;
   width:160px;
   position:relative;
   border:1px solid;
 }
 .black {
     float: left;
-    width: 45px;
-    height: 45px;
+    width: 47px;
+    height: 47px;
     background-color: #999;
       font-size:30px;
     text-align:center;
@@ -27,8 +27,8 @@
 }
 .white {
     float: left;
-    width: 45px;
-    height: 45px;
+    width: 47px;
+    height: 47px;
     background-color: #fff;
     font-size:30px;
     text-align:center;
