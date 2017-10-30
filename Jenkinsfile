@@ -14,7 +14,9 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                sshagent(['854b3f1d-1124-44e1-8698-e00cde25d748']) {
+    					hostname
+					}
             }
         }
     }
