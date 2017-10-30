@@ -10,7 +10,7 @@ pipeline {
         stage('Test') {
             steps {
                echo 'Testing..'
-               sh 'echo $PATH'
+               bat 'echo $PATH'
             }
         }
         stage('Deploy') {
