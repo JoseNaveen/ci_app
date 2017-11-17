@@ -3,7 +3,7 @@ Description=
 After=network.target nss-lookup.target
 
 [Service]
-ExecStart=/usr/local/bin/npm start
+ExecStart=/usr/bin/npm start
 WorkingDirectory=/usr/lib/app
 Restart=always
 StandardOutput=syslog

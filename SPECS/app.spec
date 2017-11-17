@@ -1,16 +1,19 @@
 %define name app
-%define version 0.0.2
+%define version 0.0.1
 %define release 1
 %define buildroot %(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
+
 Name: %{name}
 Version: %{version}
 Release: %{release}
 Summary: app
 
 Group: Installation Script
-License: GPL
+License: MIT
 Source: %{name}.tar.gz
 BuildRoot: %{buildroot}
+Requires: nodejs
+BuildRequires: nodejs
 AutoReqProv: no
 
 %description
